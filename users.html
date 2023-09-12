@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/user.css">
+    <title>User Management | Administrator Only</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="texttitle">
+                <span>YOSUAWEBDEV</span>
+            </div>
+            <ul>
+                <li><a href="https://www.instagram.com/yosua_41_bali/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="index.html">Back To Index</a></li>
+                <li><a href="admin.html">Manage Admin</a></li>
+                <li><a href="">Logout</a></li>
+            </ul>
+        </div>
+        <div class="form">
+            <div class="wrapperform">
+                
+                <div class="boxform">
+                  <h2 style="text-transform:uppercase;">HI ADMIN | CREATE NEW OR SEARCH USER USING THIS PAGE </h2>
+                  
+                    <div class="adddata">
+                        <form action="" method="post">
+                            <label for='username'>Username :</label>
+                            <input type='text' id='username' name='username' required autocomplete="off">
+
+                            <label for='password'>Password : </label>
+                            <input type='password' id='password' name='password' required autocomplete="off">
+                            
+                            <label for='password2'>Konfirmasi Password : </label>
+                            <input type='password' id='password2' name='password2' required autocomplete="off">
+
+                            <label for='jabatan'>Jabatan :</label>
+                            <select name="jabatan" id="">
+                                <option value="admin">Admin</option>
+                                <option value="user">User</option>
+                            </select>
+
+                            <button class="addbutton" type="submit" name="register">Tambah User</button>
+                        </form>
+                    </div>
+
+
+                    <div class="form1">
+                        <div class="editdata">
+                            <form action="" method="post">    
+                                <input type="hidden" name="id" value="">
+                                <input type="hidden" name="password" value="">
+
+                                <label for='username'>Username :</label>
+                                <input value="" type='text' id='username' name='username' required autocomplete="off">
+              
+                                <label for='jabatan'>Jabatan :</label>
+                                <select name="jabatan">
+                                    <option value="admin">Admin</option>
+                                    <option value="user">User</option>
+                                </select>
+
+                                <button class="editbtnform" type="submit" name="editdatabtn">Simpan Data</button>
+                                <button class="cancelbtn" name="cancel">Batal</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+                    <div class="search">
+                        <form action="" method="post">
+                            <input name="keyword" type="text" placeholder="Masukan Kata Kunci Pencarian..." autocomplete="off" autofocus>
+                            <select name="filter" id="filter">
+                                <option value="semua">Semua</option>
+                                <option value="id">Id</option>
+                                <option value="username">Username</option>
+                                <option value="jabatan">Jabatan</option>
+                            </select>
+                            <button type="submit" name="search">Cari Data</button>
+                        </form>
+                    </div>
+
+                    <hr>
+                    <div class="infospan">
+                        <span>Submition Users </span>
+                        
+                        
+                    </div>     
+                    <div class="comment">
+                        <div class="datas">
+                            <p>1</p>
+                            <p style="color:yellow;">Username : Yosua</p>
+                            <p style="color:crimson;">Password : ****</p>
+                            <p>Id : 1</p>  
+                            <a style="text-decoration:none; color:white; background-color:red; width:50px; height:25px; border-radius:5px; text-align:center;" href="">Hapus</a>
+                            <a style="text-decoration:none; color:white; background-color:#cea40a; width:50px; height:25px; border-radius:5px; text-align:center; margin-left:5px;" href="">Edit</a>
+                        </div>
+                    </div>
+
+                    
+                    <span class="info"><?= $information; ?></span>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

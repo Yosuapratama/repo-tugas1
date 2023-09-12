@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portofolio Yosua</title>
+    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div id="headers" class="header">
+            <div class="nav">
+                <div class="texttitle">
+                    <span>YOSUAWEBDEV</span>
+                </div>
+                <ul>
+                    <li><a href="#headers">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://www.instagram.com/yosua_41_bali/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-comment"></i></a></li>
+                    <li><a href="form.html">Need Help?</a></li>
+                </ul>
+            </div>
+            <div class="video">
+                <!-- <video src="VideoGunung.mp4" type="video/mp4"  mute loop autoplay></video> -->
+            </div>
+            <div class="minibox">
+                <div class="box">
+                    <div class="leftbox">
+                        <div class="wrapper">
+                            <img src="img/fotoyosua.png" alt="">
+                            <span>Nama : Yosua Antoni Pratama</span>
+                            <span>Kelas : XI RPL 3</span>
+                            <div class="schoolicon">
+                                <span><i class="fa-solid fa-school"></i></span>
+                                <p class="schooltxt">SMKN 1 Denpasar</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="rightbox">
+                        <div class="wrapright">
+                            <div class="grid">
+                                <h1><span id="typed" class="typed"></span></h1>
+                                <p>Halo Semua !</p>
+                                <p>Perkenalkan saya adalah seorang programmer yang memfokuskann diri saya terhadap Front-End dan Back-End, Perkenalkan data diri saya sebagai berikut :</p>
+                                <div class="data">
+                                    <div class="fdata">
+                                        <span>Nama : Yosua Antoni Pratama</span><br>
+                                        <span>Sekolah : SMK N 1 Denpasar, Bali</span>
+                                    </div>
+                                    <p>Hobi : </p>
+                                    <ol>
+                                        <li>Ngoding</li>
+                                        <li>Merakit Arduino</li>
+                                        <li>Menggambar Rancangan Bangunan Arsitek</li>
+                                    </ol>
+                                </div>
+                                
+                                <p class="moreinfo">Klik Next untuk mengetahui info selanjutnya</p>
+                                <span><b>(Halaman 1)</b></span>
+                            </div>
+                            <div class="grid">
+                                <h1 class="grid2title">Teknologi Yang Saya Gunakan Saat Di Web Ini</h1>
+                                <div class="img">
+                                    <img width="50px" src="img/html.png" alt="">
+                                    <img width="50px" src="img/css.png" alt="">
+                                    <img width="50px" src="img/js.png" alt="">
+                                </div>
+                                <p>Hypertext Markup Language (HTML) adalah bahasa markah standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet.</p>
+                                <p>Cascading Style Sheets, artinya sebuah bahasa sederhana yang digunakan untuk menambahkan gaya/styling (misalnya, font, warna, spasi) ke sebuah halaman website. </p>
+                                <p>JavaScript adalah skrip pemrograman ringan yang umumnya digunakan oleh web developer untuk menciptakan interaksi yang lebih dinamis saat membuat halaman web, aplikasi, server, atau game</p>
+                                <br>
+                                <span><b>(Halaman 2)</b></span>
+                            </div>
+                            <div class="grid">
+                                <h1>Kemampuan yang saya miliki :</h1>
+                                <p>Kemampuan yang saya miliki :</p>
+                                <ol>
+                                    <li>Mampu menguasai Html,Css,JavaScript</li>
+                                    <li>Mampu menguasai Back-End Berbasis Php | Basis Data | Mysqli</li>
+                                    <li>Mampu membuat website dalam waktu 1 Hari</li>
+                                </ol>
+                                <p>“No one is to blame for your future situation but yourself. If you want to be successful, then become “Successful""</p>
+                                <p>“Tidak ada yang harus disalahkan atas situasi masa depanmu selain diri kamu sendiri. Jika kamu ingin sukses, maka jadilah "Sukses""</p>
+                                <p>― Jaymin Shah</p>
+                                <br>
+                                <span><b>(Halaman 3)</b></span>
+                            </div>
+                            <div class="btnPosition">
+                                <button class="backBtn" onclick="showPrev()">Back</button>
+                                <button class="nextBtn" onclick="showNext()">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="aboutme">
+            <div class="backdrop" id="about"></div>
+            <div class="title">
+                <h1>ABOUT ME</h1>
+            </div>
+            <div class="aboutwrapper">
+                <div class="aboutbox">
+                    <div class="aboutleft">
+                        <img  src="img/foto.jpg" alt="">
+                    </div>
+                    <div class="aboutright">
+                        <span>Yosua Antoni Pratama</span>
+                        <p>Perkenalkan nama saya yosua antoni pratama, saya adalah siswa jurusan 11 RPL 3 dari SMKN 1 Denpasar, Saya cukup mampu dalam membuat website menggunakan Html,Css dan Javascript.</p>
+                        <p>Selain menjadi Front-End saya juga bisa beberapa tool / software untuk backend seperti menggunakan PHP dengan Xampp , membuat CRUD Php , Database Mysqli dan saat ini saya mempelajari tentang konsep Model View Controller dari PHP</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="aboutwrapper">
+                <div class="aboutboxes">
+                    <div class="childabout">
+                        <div class="box1"></div>
+                        <div class="box2"></div>
+                        <div class="box3"></div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+        </div>
+        <div class="contactme">
+            <br>
+            <div class="titlecontact">
+                <h1 id="contact">CONTACT ME</h1>
+            </div>
+            <div class="map" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.395934381525!2d115.1996186744165!3d-8.653841288036725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240a64973f48f%3A0x9d2b5c4b97e633aa!2sJl.%20Merta%20Jaya%20Gg.%20II%2C%20Pemecutan%2C%20Kec.%20Denpasar%20Bar.%2C%20Kota%20Denpasar%2C%20Bali%2080111!5e0!3m2!1sid!2sid!4v1693982959324!5m2!1sid!2sid" width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </div>
+        <footer>
+            <p>COPYRIGHT YOSUAWEBDEV 2023</p>
+            <div class="link">
+                <a href="#headers">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="https://www.instagram.com/yosua_41_bali/">Instagram</a>
+                <a href="form.html">Need Help?</a>
+            </div>
+        </footer>
+        <script>
+            var visibleDiv = 0;
+            function showDiv(){
+                $(".grid").hide();
+                $(".grid:eq("+ visibleDiv +")").show();
+            }
+            showDiv();
+
+            function showNext(){
+                if(visibleDiv == $(".grid").length-1){
+                    visibleDiv = 0;
+                }else {
+                    visibleDiv ++;
+                }
+                showDiv();
+            }
+
+            function showPrev(){
+                if(visibleDiv == 0){
+                    visibleDiv = $(".grid").length-1;
+                }else {
+                    visibleDiv --;
+                }
+                showDiv();
+            }
+            
+            new Typed('#typed',{
+            strings : ['Hi Semuanya !','Selamat Datang !','Explore This Website','Have Fun !'],
+            typeSpeed : 100,
+            delaySpeed : 100,
+            loop : true
+            });
+        </script>
+    </div>
+</body>
+</html>

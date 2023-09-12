@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Roboto&family=Rubik:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #051937, #101c42, #1e1f4d, #2e2056, #3f205e);
+}
+.nav {
+    z-index: 100;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height:70px;
+    background-color: #f6f4f4;
+}
+.nav .texttitle {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size:20px;
+    margin-left: 100px;
+}
+.nav ul {
+    display: flex;
+    margin-right: 100px;
+}
+.nav ul li {
+    list-style-type: none;
+    margin:0px 10px;
+}
+.nav ul li a{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-out;
+}
+.nav ul li a:hover{
+    font-weight: bold;
+}
+.active::before {
+    content: "=> ";
+}
+.active {
+    font-weight: bold;
+}
+.form {
+    width: 100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.form .wrapperform {
+    border-radius: 10px;
+    width: 30%;
+    height: 70vh;
+    background-color:white;
+}
+.wrapperform .boxform h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size:20px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 40px;
+}
+.boxinput {
+    margin: 10px 0px;
+    width: 90%;
+    height: 40px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.lastbox {
+    width: 50%;
+    height: 200px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.biginput {
+    width: 90%;
+    height: 90px;
+}
+#submit {
+    margin-top: 30px;
+    margin-left: 45px;
+    width: 80px;
+    height: 35px;
+    background-color: green;
+    border:none;
+    color:white;
+}
+#submit:hover {
+    cursor: pointer;
+}
+#message {
+    margin-top: 20px;
+}
+
+.logingagal {
+    width: 200px;
+    height: 40px;
+    background-color: crimson;
+}
